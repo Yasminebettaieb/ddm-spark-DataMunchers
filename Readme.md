@@ -4,3 +4,7 @@ and then simply excute :
 
 ```
 java -jar DDMSpark-assembly-0.1.jar --cores 4 --partitions 100
+
+```
+Or simply by excuting it in Intellij.
+
