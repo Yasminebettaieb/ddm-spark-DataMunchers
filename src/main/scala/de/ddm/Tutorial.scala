@@ -335,34 +335,34 @@ object Tutorial {
     println("---------------------------------------------------------------------------------------------------------")
 
     // Playground for exam tasks:
-/*
-    val students = spark
-      .read
-      .option("quote", "\"")
-      .option("delimiter", ",")
-      .csv(s"data/students.csv")
-      .toDF("ID", "Name", "Semester", "Supervisor")
-      .as[(String, String, String, String)]
-    val enrollments = spark
-      .read
-      .option("quote", "\"")
-      .option("delimiter", ",")
-      .csv(s"data/enrollments.csv")
-      .toDF("StudentID", "CourseID", "Credits")
-      .as[(String, String, String)]
-    val courses = spark
-      .read
-      .option("quote", "\"")
-      .option("delimiter", ",")
-      .csv(s"data/courses.csv")
-      .toDF("ID", "Title", "Teacher", "Topic")
-      .as[(String, String, String, String)]
+    /*
+        val students = spark
+          .read
+          .option("quote", "\"")
+          .option("delimiter", ",")
+          .csv(s"data/students.csv")
+          .toDF("ID", "Name", "Semester", "Supervisor")
+          .as[(String, String, String, String)]
+        val enrollments = spark
+          .read
+          .option("quote", "\"")
+          .option("delimiter", ",")
+          .csv(s"data/enrollments.csv")
+          .toDF("StudentID", "CourseID", "Credits")
+          .as[(String, String, String)]
+        val courses = spark
+          .read
+          .option("quote", "\"")
+          .option("delimiter", ",")
+          .csv(s"data/courses.csv")
+          .toDF("ID", "Title", "Teacher", "Topic")
+          .as[(String, String, String, String)]
 
-    val result = students
-      .filter(s => Integer.valueOf(s._3) > 3)
-      .map(s => (hash(s._2), s._4))
-      .toDF("HashedName", "Supervisor")
-      .collect()
-*/
+        val result = students
+          .filter(s => Integer.valueOf(s._3) > 3)
+          .map(s => (hash(s._2), s._4))
+          .toDF("HashedName", "Supervisor")
+          .collect()
+    */
   }
 }
